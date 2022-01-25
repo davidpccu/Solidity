@@ -15,4 +15,15 @@
 ## 教學
 + [cryptozombies](https://cryptozombies.io/zh/course)
 
+## Gas
+
+### Gas Price
+Gas Priec 就是使用者願意出的 Gas 單價，以 Gwei 為單位，礦工的邏輯會依據你出的 Gas Price 來排序，價錢越高的會越優先執行。
+
+### Gas Limit
+就是一個保護機制，你可以設定一個交易 or 部署合約，最多花費多少，避免使用者寫出了一個有 bug 的合約，導致無窮盡的消耗資源在區塊鏈中，只要使用到資料就會一直付費，所以 Gas Limit 就是一個保護機制。
+
+> 但是也不能因為這樣刻意把 Gas Limit 調整得很低，因為這樣可能導致你的合約執行到一半，就踩到 Gas Limit 的限制，導致合約執行到一半就失敗。
+有一點要注意，已經消耗掉的 Gas 是不會退還的。
+
 待續...
